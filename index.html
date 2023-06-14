@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alivio</title>
+</head>
+
+<body>
+
+    <header class="header__top" id="header-top">
+        <div class="container">
+            <div class="header__menu">
+                <a href="#">
+                    <h2 class="site__name">Alivio</h2>
+                </a>
+                <nav class="header__menu-bar">
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li><a href="#" id="open__modal">About Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <span class="fa-stack fa-stack small">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-phone fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div class="header__contacts-item">
+                        <a href="tel:+79631190203">+79631190203</a>
+                        <a href="mailto:lluvi@yandex.ru">lluvi@yandex.ru</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- модальное окно ссылки About us -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <span class="close">&times;</span>
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis at! Neque, consequatur nihil corporis quibusdam doloribus totam alias? Iure necessitatibus voluptate porro, quisquam nam reprehenderit officia odio earum a.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil quaerat dolore corporis rerum quod totam neque vitae atque quidem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed saepe, porro fuga laudantium laborum soluta numquam, labore ducimus ab cumque illum modi aliquam reprehenderit architecto ipsam quae hic ullam. Non?</p>
+            <img src="img/header__modal.jpg" alt="modal__img">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit modi rem nesciunt harum quod possimus atque cupiditate eaque voluptatum? Suscipit dolorem error non dolore culpa harum inventore dolores quidem, facilis ut blanditiis nobis asperiores labore voluptas! Accusantium, dignissimos tempore!</p>
+        </div>
+    </div>
+
+    <header class="header__bottom">
+        <div class="container">
+            <div class="header__item">
+                <h1 class="site__name">Alivio</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque eius doloribus quia tempora
+                    iusto, ducimus maiores nobis quidem. Officiis, laudantium.</p>
+                <a href="#products" class="btn__link">Get started</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="site__subtitle">Our products</h2>
+                <div class="products__card">
+                    <div class="products__card-item">
+                        <img src="img/products_1.jpg" alt="products_img">
+                        <h3>Ridings</h3>
+                        <p>We will show you the world of cars</p>
+                        <p>One trip <span>10$</span></p>
+                        <p>Monthly subscription <span>80$</span></p>
+                        <a class="btn__link" href="#">Read more</a>
+                    </div>
+                    <div class="products__card-item">
+                        <img src="img/products_2.jpg" alt="products_img">
+                        <h3>Walks</h3>
+                        <p>Walks around the world</p>
+                        <p>One trip <span>Free</span></p>
+                        <p>Monthly subscription <span>30$</span></p>
+                        <a class="btn__link" href="#">Read more</a>
+                    </div>
+                    <div class="products__card-item">
+                        <img src="img/products_3.jpg" alt="products_img">
+                        <h3>Tea ceremony</h3>
+                        <p>For warmth and mood</p>
+                        <p>One trip <span>5$</span></p>
+                        <p>Monthly subscription <span>60$</span></p>
+                        <a class="btn__link" href="#">Read more</a>
+                    </div>
+                    <div class="products__card-item">
+                        <img src="img/products_4.jpg" alt="products_img">
+                        <h3>Concert</h3>
+                        <p>Music for the soul</p>
+                        <p>One trip <span>15$</span></p>
+                        <p>Monthly subscription <span>100$</span></p>
+                        <a class="btn__link" href="#">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info" id="about">
+            <div class="container">
+                <div class="info__card">
+                    <div class="info__item">
+                        <h3 class="info__subtitle">40%</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="info__item">
+                        <h3 class="info__subtitle">2.579</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="info__item">
+                        <h3 class="info__subtitle">93</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2 class="site__subtitle">Gallery</h2>
+            <!-- слайдер -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/gallery_1.jpg" alt="gallery_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery_2.jpg" alt="gallery_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery_3.jpg" alt="gallery_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery_4.jpg" alt="gallery_img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery_5.jpg" alt="gallery_img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <form action="">
+                    <fieldset>
+                        <h2 class="site__subtitle">Feedback</h2>
+                        <p>Leave your details and we will call you back</p>
+                        <input id="name" type="text" placeholder="Your name...">
+                        <input id="phone" type="tel" placeholder="Your phone number...">
+                        <input type="button" value="Send" onclick="foo()">
+                        <div class="rights">
+                            <input id="check" type="checkbox"> By clicking on the button, you agree to the privacy policy
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__site-name">
+                    <a href="#header-top"><h2 class="site__name">Alivio</h2></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati ducimus aliquid dolor
+                        architecto accusamus?</p>
+                    <p>&copy; 2023 Alivio Inc.</p>
+                </div>
+                <div class="footer__links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>FAQ</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Contacts us</h4>
+                    <address>
+                        <p class="footer__address">213 Baker Street <br> Oriel City Kounty <br> 7000 KNW, <br> Kountry
+                            Name</p>
+                        <a class="footer__tel" href="tel:+79631190203">+79631190203</a>
+                        <a class="footer__email" href="mailto:lluvi@yandex.ru">lluvi@yandex.ru</a>
+                    </address>
+                </div>
+            </div>
+            <div class="footer__icons">
+                <h2 class="site__subtitle">Look for us on social networks</h2>
+                <a href="https://vk.com/" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-vk fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+                <a href="https://t.me/LouieUlen" target="_blank">
+                    <span class="fa-stack fa-2x">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-paper-plane fa-stack-1x fa-inverse"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a30d94e146.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
