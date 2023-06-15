@@ -1,8 +1,8 @@
 :root {
     --violet: #B0C4DE;
     --white: #FFF;
-    --lilu: #ebeb22;
-    --black: #000;
+    --lilu: #F4A460;
+    --black: #212121;
     --fill-color: #FFC107;
     --font-light: 300;
     --font-large: 700;
@@ -114,7 +114,7 @@ li {
     height: 100%;
     background-color: rgba(51, 50, 50, 0.6);
     display: none;
-    color: var(--white);
+    color: var(--black);
     overflow: auto;
     z-index: 999;
 }
@@ -175,8 +175,10 @@ li {
 .btn__link {
     background-color: var(--lilu);
     text-transform: uppercase;
+    font-weight: var(--font-large);
     color: var(--white);
     padding: 20px 70px;
+    border-radius: 5px;
 }
 
 .header__item:hover {
@@ -186,6 +188,7 @@ li {
 
 .header__item:hover .btn__link {
     background-color: var(--violet);
+    color: var(--black);
 }
 
 /* продукты */
@@ -261,7 +264,7 @@ li {
 
 /* инфо */
 .info {
-    background-color: var(--lilu);
+    background-color: var(--fill-color);
     padding: 100px 0;
 }
 
@@ -277,7 +280,7 @@ li {
 }
 
 .info__item:nth-child(even) {
-    color: #2f2d2d;
+    color: var(--black);
 }
 
 .info__subtitle {
