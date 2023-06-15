@@ -1,9 +1,9 @@
 :root {
-    --violet: #379683;
+    --violet: #B0C4DE;
     --white: #FFF;
-    --lilu: #5CDB95;
+    --lilu: #ebeb22;
     --black: #000;
-    --fill-color: #8EE4AF;
+    --fill-color: #FFC107;
     --font-light: 300;
     --font-large: 700;
 }
@@ -104,6 +104,7 @@ li {
 .header__contacts-item a:hover {
     border-bottom: 3px var(--lilu) solid;
 }
+
 /* модальное окно */
 .modal {
     position: fixed;
@@ -117,6 +118,7 @@ li {
     overflow: auto;
     z-index: 999;
 }
+
 .modal__content {
     width: 50%;
     background-color: var(--violet);
@@ -126,6 +128,7 @@ li {
     box-shadow: rgba(0, 0, 0, 0.8) 0px 25px 50px -12px;
     position: relative;
 }
+
 .close {
     position: absolute;
     right: 20px;
@@ -134,19 +137,22 @@ li {
     font-weight: bold;
     cursor: pointer;
 }
+
 .modal__content h1 {
     margin-bottom: 25px;
     text-align: center;
 }
+
 .modal__content p {
     margin-bottom: 25px;
 }
 
 /* основная часть шапки */
 .header__bottom {
-    background-image: url(../img/header__background.png);
+    background-image: url(../img/header__bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     color: var(--white);
     text-align: center;
     padding-top: 200px;
@@ -156,7 +162,7 @@ li {
 .header__item {
     max-width: 650px;
     margin: 0 auto;
-    background-color: rgba(21, 21, 21, 0.2);
+    background-color: rgba(21, 21, 21, 0.4);
     padding: 80px;
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -238,7 +244,7 @@ li {
 }
 
 .products__card-item:hover {
-    background-color: rgba(21, 21, 21, 0.3);
+    background-color: rgba(21, 21, 21, 0.5);
     color: var(--white);
     border: none;
     box-shadow: none;
@@ -246,10 +252,11 @@ li {
 
 .products__card-item:hover .btn__link {
     background-color: var(--violet);
+    color: var(--black);
 }
 
 .products__card-item:hover span {
-    color: rgb(55, 230, 20);
+    color: var(--fill-color);
 }
 
 /* инфо */
@@ -269,6 +276,10 @@ li {
     font-weight: var(--font-light);
 }
 
+.info__item:nth-child(even) {
+    color: #2f2d2d;
+}
+
 .info__subtitle {
     text-align: center;
     margin-bottom: 15px;
@@ -280,12 +291,22 @@ li {
 .gallery {
     padding: 100px 0 0;
 }
+
 .swiper {
     max-width: 1200px;
     max-height: 799px;
 }
+
 .swiper-slide img {
     width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--fill-color);
+}
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--fill-color);
 }
 
 /* форма */
@@ -322,7 +343,7 @@ input[type="tel"] {
     padding: 20px;
     border-radius: 10px;
     border: none;
-    box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 6px 1px rgba(255, 193, 7, 0.8);
     margin-right: 15px;
     margin-bottom: 30px;
     outline: none;
@@ -330,17 +351,19 @@ input[type="tel"] {
 
 input[type="button"] {
     color: var(--white);
-    background-color: var(--violet);
+    text-transform: uppercase;
+    background-color: var(--fill-color);
     padding: 20px 50px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 6px 1px rgba(0, 0, 0, 0.3);
     transition: all 0.2s ease;
 }
 
 input[type="button"]:hover {
-    background-color: var(--lilu);
+    background-color: var(--violet);
     cursor: pointer;
+    color: var(--black);
 }
 
 /* footer */
@@ -360,6 +383,7 @@ input[type="button"]:hover {
 .footer__site-name {
     text-align: center;
 }
+
 .footer__site-name p {
     margin-bottom: 10px;
 }
@@ -369,13 +393,20 @@ input[type="button"]:hover {
     text-transform: uppercase;
     padding-top: 15px;
 }
+
 .footer__links ul li {
     margin-bottom: 5px;
 }
-.footer__links a, .footer__tel, .footer__email {
+
+.footer__links a,
+.footer__tel,
+.footer__email {
     transition: all 0.2s ease;
 }
-.footer__links a:hover, .footer__tel:hover, .footer__email:hover {
+
+.footer__links a:hover,
+.footer__tel:hover,
+.footer__email:hover {
     border-bottom: 3px var(--lilu) solid;
 }
 
@@ -392,10 +423,16 @@ input[type="button"]:hover {
 .footer__icons>.site__subtitle {
     margin-bottom: 20px;
 }
-.footer__icons .fa-vk, .footer__icons .fa-paper-plane, .footer__icons .fa-youtube {
-    color: var(--violet);
+
+.footer__icons .fa-vk,
+.footer__icons .fa-paper-plane,
+.footer__icons .fa-youtube {
+    color: #2f2d2d;
     transition: all 0.2s ease;
 }
-.footer__icons .fa-vk:hover, .footer__icons .fa-paper-plane:hover, .footer__icons .fa-youtube:hover {
+
+.footer__icons .fa-vk:hover,
+.footer__icons .fa-paper-plane:hover,
+.footer__icons .fa-youtube:hover {
     color: var(--white);
 }
