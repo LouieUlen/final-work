@@ -176,19 +176,18 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <form action="#">
                     <fieldset>
                         <h2 class="site__subtitle">Feedback</h2>
                         <p>Leave your details and we will call you back</p>
                         <div class="form__item">
-                            <input id="name" type="text" placeholder="Your name...">
-                            <input id="phone" type="tel" placeholder="Your phone number...">
-                            <input type="button" value="Send" onclick="foo()">
+                            <input id="name" id="name" type="text" placeholder="Your name...">
+                            <input id="phone" id="phone" type="tel" placeholder="Your phone number...">
+                            <input type="button" id="send" value="Send">
                         </div>
-                        <input id="check" type="checkbox"> By clicking on the button, you agree to the privacy
-                        policy
+                        <input id="agree" type="checkbox"><span>By clicking on the button, you agree to the privacy policy</span>
                     </fieldset>
                 </form>
             </div>

@@ -33,23 +33,59 @@ window.onclick = function (event) {
 }
 
 // проверка заполенения формы
-function foo() {
-    let message = "";
-    let Name = document.getElementById("name").value;
-    if (Name == "") {
-        message = message + "Введите имя\n";
-    }
-    let Phone = document.getElementById("phone").value;
-    if (Phone == "") {
-        message = message + "Введите телефон\n";
-    }
-    let Check = document.getElementById("check");
-    if (Check.checked == false) {
-        message = message + "Согласитесь с политикой конфиденциальности";
-    }
-    if (message == "") {
-        alert("Мы вам скоро перезвоним!");
-    } else {
-        alert(message);
-    }
+// function foo() {
+//     let message = "";
+//     let Name = document.getElementById("name").value;
+//     if (Name == "") {
+//         message = message + "Введите имя\n";
+//     }
+//     let Phone = document.getElementById("phone").value;
+//     if (Phone == "") {
+//         message = message + "Введите телефон\n";
+//     }
+//     let Check = document.getElementById("check");
+//     if (Check.checked == false) {
+//         message = message + "Согласитесь с политикой конфиденциальности";
+//     }
+//     if (message == "") {
+//         alert("Мы вам скоро перезвоним!");
+//     } else {
+//         alert(message);
+//     }
+// }
+let form = document.getElementById('send');
+form.onclick = function(event) {
+  event.preventDefault();
+
+  let name  = document.getElementById('name');
+  let phone = document.getElementById('phone');
+  let agree = document.getElementById('agree');
+  let errors = false;
+
+  if (name.value.trim() == '') {
+    name.className = 'is-invalid';
+    errors = true;
+  } else {
+    name.className = '';
+  }
+
+  if (phone.value.trim() == '') {
+    phone.className = 'is-invalid';
+    errors = true;
+  } else {
+    phone.className = '';
+  }
+
+  if (!agree.checked) {
+    agree.nextElementSibling.className = 'error';
+    errors = true;
+  } else {
+    agree.nextElementSibling.className = '';
+  }
+
+  if (errors) {
+    alert('Заполните все поля!');
+  } else {
+    alert('Ваша заявка успешно отправлена!');
+  }
 }

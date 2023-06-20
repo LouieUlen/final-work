@@ -309,6 +309,7 @@ li {
 .swiper-pagination-bullet-active {
     background-color: var(--fill-color);
 }
+
 .swiper-button-next,
 .swiper-button-prev {
     color: var(--fill-color);
@@ -347,7 +348,7 @@ input[type="text"],
 input[type="tel"] {
     padding: 20px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 2px 0px 6px 1px rgba(255, 193, 7, 0.8);
     margin-right: 15px;
     margin-bottom: 30px;
@@ -369,6 +370,16 @@ input[type="button"]:hover {
     background-color: var(--violet);
     cursor: pointer;
     color: var(--black);
+}
+
+#feedback .is-invalid {
+    border-color: red;
+    color: red;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.4);
+}
+
+.error {
+    color: red;
 }
 
 /* footer */
