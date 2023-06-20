@@ -78,6 +78,7 @@ li {
 .header__menu-bar ul li a {
     transition: 0.2s;
     padding: 5px 10px;
+    border: 3px transparent solid;
 }
 
 .header__menu-bar ul li a:hover {
@@ -99,6 +100,7 @@ li {
 .header__contacts-item a {
     display: block;
     transition: 0.2s;
+    border-bottom: 3px transparent solid;
 }
 
 .header__contacts-item a:hover {
@@ -166,6 +168,7 @@ li {
     padding: 80px;
     border-radius: 20px;
     transition: all 0.3s ease;
+    border: 3px solid transparent;
 }
 
 .header__item p {
@@ -416,6 +419,7 @@ input[type="button"]:hover {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-bottom: 3px transparent solid;
 }
 
 .footer__icons {
